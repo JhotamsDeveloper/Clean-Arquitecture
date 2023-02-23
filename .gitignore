@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Clean-Arquitecture/Clean.Arquitectucture.Aplication/obj
+/Clean-Arquitecture/Clean.Arquitecture.Api/obj
+/Clean-Arquitecture/Clean.Arquitecture.Domain/obj
+/Clean-Arquitecture/Clean.Arquitecture.Infraestruture/obj
