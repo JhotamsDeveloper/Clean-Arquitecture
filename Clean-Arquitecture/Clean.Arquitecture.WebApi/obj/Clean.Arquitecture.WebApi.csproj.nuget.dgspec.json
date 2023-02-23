@@ -1,0 +1,224 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.WebApi\\Clean.Arquitecture.WebApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Domain\\Clean.Arquitecture.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Domain\\Clean.Arquitecture.Domain.csproj",
+        "projectName": "Clean.Arquitecture.Domain",
+        "projectPath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Domain\\Clean.Arquitecture.Domain.csproj",
+        "packagesPath": "C:\\Users\\Jhonatan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jhonatan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Infraestruture\\Clean.Arquitecture.Infraestruture.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Infraestruture\\Clean.Arquitecture.Infraestruture.csproj",
+        "projectName": "Clean.Arquitecture.Infraestruture",
+        "projectPath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Infraestruture\\Clean.Arquitecture.Infraestruture.csproj",
+        "packagesPath": "C:\\Users\\Jhonatan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Infraestruture\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jhonatan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Domain\\Clean.Arquitecture.Domain.csproj": {
+                "projectPath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Domain\\Clean.Arquitecture.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.14, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.WebApi\\Clean.Arquitecture.WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.WebApi\\Clean.Arquitecture.WebApi.csproj",
+        "projectName": "Clean.Arquitecture.WebApi",
+        "projectPath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.WebApi\\Clean.Arquitecture.WebApi.csproj",
+        "packagesPath": "C:\\Users\\Jhonatan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.WebApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Jhonatan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Infraestruture\\Clean.Arquitecture.Infraestruture.csproj": {
+                "projectPath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Infraestruture\\Clean.Arquitecture.Infraestruture.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
