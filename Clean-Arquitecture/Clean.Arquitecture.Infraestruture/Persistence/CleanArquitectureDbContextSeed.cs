@@ -10,6 +10,7 @@ namespace Clean.Arquitecture.Infraestruture.Persistence
             {
                 new User()
                 {
+                    Id = Guid.NewGuid(),
                     Names = "Jhonatan Alejandro",
                     LastName = "Muñoz",
                     SecondLastName = "Serna",
