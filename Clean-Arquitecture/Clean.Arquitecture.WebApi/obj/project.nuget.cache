@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "ZMBYtYASldBUnr8ci/iTgUe27nA21QDC+byUS82+iKkyCDwr52jPhHrqDFsEsEjy4S+ABh0/zicINoJMuN/oBw==",
-  "success": false,
+  "dgSpecHash": "Wyjl4K5nYT903+QfUzlk7C+dBKtBu26sB5V8+2+uBTNih8VFdsHEOBD8P6yi0K6pFAJUVCIN3bNQb2+88QlH7A==",
+  "success": true,
   "projectFilePath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.WebApi\\Clean.Arquitecture.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jhonatan\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
@@ -45,7 +45,7 @@
     "C:\\Users\\Jhonatan\\.nuget\\packages\\microsoft.extensions.hosting\\6.0.1\\microsoft.extensions.hosting.6.0.1.nupkg.sha512",
     "C:\\Users\\Jhonatan\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\6.0.0\\microsoft.extensions.hosting.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Jhonatan\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
-    "C:\\Users\\Jhonatan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.2\\microsoft.extensions.logging.abstractions.6.0.2.nupkg.sha512",
+    "C:\\Users\\Jhonatan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.3\\microsoft.extensions.logging.abstractions.6.0.3.nupkg.sha512",
     "C:\\Users\\Jhonatan\\.nuget\\packages\\microsoft.extensions.logging.configuration\\6.0.0\\microsoft.extensions.logging.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\Jhonatan\\.nuget\\packages\\microsoft.extensions.logging.console\\6.0.0\\microsoft.extensions.logging.console.6.0.0.nupkg.sha512",
     "C:\\Users\\Jhonatan\\.nuget\\packages\\microsoft.extensions.logging.debug\\6.0.0\\microsoft.extensions.logging.debug.6.0.0.nupkg.sha512",
@@ -89,24 +89,5 @@
     "C:\\Users\\Jhonatan\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
     "C:\\Users\\Jhonatan\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.Extensions.Options.ConfigurationExtensions from 7.0.0 to 6.0.0. Reference the package directly from the project to select a different version. \r\n Clean.Arquitecture.WebApi -> Clean.Arquitecture.Infraestruture -> Clean.Arquitectucture.Aplication -> Microsoft.Extensions.Options.ConfigurationExtensions (>= 7.0.0) \r\n Clean.Arquitecture.WebApi -> Clean.Arquitecture.Infraestruture -> Microsoft.Extensions.Options.ConfigurationExtensions (>= 6.0.0)",
-      "libraryId": "Microsoft.Extensions.Options.ConfigurationExtensions",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.Extensions.Logging.Abstractions from 7.0.0 to 6.0.2. Reference the package directly from the project to select a different version. \r\n Clean.Arquitecture.WebApi -> Clean.Arquitecture.Infraestruture -> Clean.Arquitectucture.Aplication -> Microsoft.Extensions.Logging.Abstractions (>= 7.0.0) \r\n Clean.Arquitecture.WebApi -> Clean.Arquitecture.Infraestruture -> Microsoft.Extensions.Logging.Abstractions (>= 6.0.2)",
-      "libraryId": "Microsoft.Extensions.Logging.Abstractions",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  "logs": []
 }

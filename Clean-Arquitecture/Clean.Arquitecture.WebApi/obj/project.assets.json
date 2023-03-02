@@ -726,7 +726,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
+      "Microsoft.Extensions.Logging.Abstractions/6.0.3": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll": {
@@ -739,7 +739,7 @@
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.targets": {}
         }
       },
       "Microsoft.Extensions.Logging.Configuration/6.0.0": {
@@ -1530,12 +1530,13 @@
         "dependencies": {
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.0",
+          "Clean.Arquitecture.Domain": "1.0.0",
           "FluentValidation": "11.5.1",
           "FluentValidation.DependencyInjectionExtensions": "11.5.1",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
           "Microsoft.AspNetCore.Http": "2.2.2",
-          "Microsoft.Extensions.Logging.Abstractions": "7.0.0",
-          "Microsoft.Extensions.Options.ConfigurationExtensions": "7.0.0"
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.3",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0"
         },
         "compile": {
           "bin/placeholder/Clean.Arquitectucture.Aplication.dll": {}
@@ -1563,7 +1564,7 @@
           "Microsoft.EntityFrameworkCore": "6.0.14",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.14",
           "Microsoft.Extensions.Hosting": "6.0.1",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "6.0.3",
           "Microsoft.Extensions.Options.ConfigurationExtensions": "6.0.0"
         },
         "compile": {
@@ -2434,10 +2435,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.Logging.Abstractions/6.0.2": {
-      "sha512": "pwXCZKaA7m5wgmCj49dW+H1RPSY7U62SKLTQYCcavf/k3Nyt/WnBgAjG4jMGnwy9rElfAZ2KvxvM5CJzJWG0hg==",
+    "Microsoft.Extensions.Logging.Abstractions/6.0.3": {
+      "sha512": "SUpStcdjeBbdKjPKe53hVVLkFjylX0yIXY8K+xWa47+o1d+REDyOMZjHZa+chsQI1K9qZeiHWk9jos0TFU7vGg==",
       "type": "package",
-      "path": "microsoft.extensions.logging.abstractions/6.0.2",
+      "path": "microsoft.extensions.logging.abstractions/6.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2472,16 +2473,16 @@
         "analyzers/dotnet/roslyn4.0/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
         "analyzers/dotnet/roslyn4.0/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
         "analyzers/dotnet/roslyn4.0/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
-        "build/Microsoft.Extensions.Logging.Abstractions.targets",
         "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.targets",
-        "buildTransitive/netcoreapp3.1/_._",
+        "buildTransitive/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.targets",
         "lib/net461/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/net461/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/net6.0/Microsoft.Extensions.Logging.Abstractions.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
-        "microsoft.extensions.logging.abstractions.6.0.2.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.6.0.3.nupkg.sha512",
         "microsoft.extensions.logging.abstractions.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -3651,6 +3652,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Clean.Arquitectucture.Aplication >= 1.0.0",
       "Clean.Arquitecture.Infraestruture >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.14",
       "Swashbuckle.AspNetCore >= 6.2.3"
@@ -3688,6 +3690,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitectucture.Aplication\\Clean.Arquitectucture.Aplication.csproj": {
+              "projectPath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitectucture.Aplication\\Clean.Arquitectucture.Aplication.csproj"
+            },
             "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Infraestruture\\Clean.Arquitecture.Infraestruture.csproj": {
               "projectPath": "C:\\Users\\Jhonatan\\Documents\\DATOS\\TECOC\\ARQUITECTURA DE SOFTWARE\\Clean-Arquitecture\\Clean-Arquitecture\\Clean.Arquitecture.Infraestruture\\Clean.Arquitecture.Infraestruture.csproj"
             }
@@ -3737,25 +3742,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.Extensions.Options.ConfigurationExtensions from 7.0.0 to 6.0.0. Reference the package directly from the project to select a different version. \r\n Clean.Arquitecture.WebApi -> Clean.Arquitecture.Infraestruture -> Clean.Arquitectucture.Aplication -> Microsoft.Extensions.Options.ConfigurationExtensions (>= 7.0.0) \r\n Clean.Arquitecture.WebApi -> Clean.Arquitecture.Infraestruture -> Microsoft.Extensions.Options.ConfigurationExtensions (>= 6.0.0)",
-      "libraryId": "Microsoft.Extensions.Options.ConfigurationExtensions",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    },
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Detected package downgrade: Microsoft.Extensions.Logging.Abstractions from 7.0.0 to 6.0.2. Reference the package directly from the project to select a different version. \r\n Clean.Arquitecture.WebApi -> Clean.Arquitecture.Infraestruture -> Clean.Arquitectucture.Aplication -> Microsoft.Extensions.Logging.Abstractions (>= 7.0.0) \r\n Clean.Arquitecture.WebApi -> Clean.Arquitecture.Infraestruture -> Microsoft.Extensions.Logging.Abstractions (>= 6.0.2)",
-      "libraryId": "Microsoft.Extensions.Logging.Abstractions",
-      "targetGraphs": [
-        "net6.0"
-      ]
-    }
-  ]
+  }
 }

@@ -16,6 +16,26 @@ namespace Clean.Arquitecture.Infraestruture.Repositories
             _context = context;
         }
 
+        public async Task<T> DeleteAsync(T entity)
+        {
+            _ = _context.Set<T>().Remove(entity);
+            return entity;
+        }
+
+        public async Task<T> InsertarAsync(T entity)
+        {
+            _ = await _context.Set<T>().AddAsync(entity);
+            return entity;
+        }
+
+        public async Task<T> UpdateAsync(T entity)
+        {
+            _ = _context.Set<T>().Update(entity);
+            return entity;
+        }
+
+
+
         public async Task<IReadOnlyList<T>> ObtenerAsincronico(Expression<Func<T, bool>> predicado)
         {
             return await _context.Set<T>().Where(predicado).ToListAsync();

@@ -2,6 +2,7 @@
 {
     public interface IUnitOfWork
     {
-        Task<int> GuardarRegistro();
+        IAsyncRepository<TEntity> Repository<TEntity>() where TEntity : class;
+        Task<int> SalvarCambios();
     }
 }

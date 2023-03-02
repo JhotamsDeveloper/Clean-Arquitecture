@@ -6,5 +6,9 @@ namespace Clean.Arquitectucture.Aplication.Contracts
     {
         Task<IReadOnlyList<T>> ObtenerTodosLosDatosAsincronico();
         Task<IReadOnlyList<T>> ObtenerAsincronico(Expression<Func<T,bool>> predicado);
+
+        Task<T> InsertarAsync(T entity);
+        Task<T> UpdateAsync(T entity);
+        Task<T> DeleteAsync(T entity);
     }
 }
