@@ -1,4 +1,6 @@
-﻿using Clean.Arquitecture.Infraestruture.Persistence;
+﻿using Clean.Arquitectucture.Aplication.Contracts;
+using Clean.Arquitecture.Infraestruture.Persistence;
+using Clean.Arquitecture.Infraestruture.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -15,8 +17,10 @@ namespace Clean.Arquitecture.Infraestruture
                     option.UseSqlServer(configuration
                                     .GetConnectionString("ConnectionString")));
 
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped(typeof(IAsyncRepository<>), typeof(RepositoryBase<>));
+
             return services;
-        
         }
     }
 }
