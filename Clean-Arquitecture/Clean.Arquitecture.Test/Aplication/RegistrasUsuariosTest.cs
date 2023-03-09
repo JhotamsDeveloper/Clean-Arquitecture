@@ -20,7 +20,7 @@ namespace Clean.Arquitecture.Test.Aplication
         }
 
         [Fact]
-        public async Task Handle_WhenCalled_ReturnsTrue()
+        public async Task Deberia_de_registrar_un_usuario_exitosamente()
         {
             // Arrange
             var command = new RegistrarUsuarioCommand();
