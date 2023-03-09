@@ -4,6 +4,7 @@ using Clean.Arquitecture.Infraestruture.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Clean.Arquitecture.Infraestruture.Migrations
 {
     [DbContext(typeof(CleanArquitectureDbContext))]
-    partial class CleanArquitectureDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230309154104_mv2")]
+    partial class mv2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
