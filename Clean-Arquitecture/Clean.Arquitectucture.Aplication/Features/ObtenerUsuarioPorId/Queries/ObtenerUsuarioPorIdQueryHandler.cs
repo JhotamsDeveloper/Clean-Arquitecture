@@ -15,7 +15,7 @@ namespace Clean.Arquitectucture.Aplication.Features.ObtenerUsuarioPorId.Queries
 
         public async Task<object> Handle(ObtenerUsuarioPorIdQuery request, CancellationToken cancellationToken)
         {
-            var user = _unitOfWork
+            var user = await _unitOfWork
                 .Repository<User>()
                 .ObtenerPorIdAsincronico(request.IdUser);
 
