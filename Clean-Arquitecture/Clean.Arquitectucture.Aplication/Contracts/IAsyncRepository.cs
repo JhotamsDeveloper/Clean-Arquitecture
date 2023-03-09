@@ -5,6 +5,7 @@ namespace Clean.Arquitectucture.Aplication.Contracts
     public interface IAsyncRepository<T> where T : class
     {
         Task<IReadOnlyList<T>> ObtenerTodosLosDatosAsincronico();
+        Task<T> ObtenerPorIdAsincronico(Guid id);
         Task<IReadOnlyList<T>> ObtenerAsincronico(Expression<Func<T,bool>> predicado);
 
         Task<T> InsertarAsync(T entity);

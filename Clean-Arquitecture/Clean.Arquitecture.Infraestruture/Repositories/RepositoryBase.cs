@@ -45,5 +45,10 @@ namespace Clean.Arquitecture.Infraestruture.Repositories
         {
             return await _context.Set<T>().ToListAsync();
         }
+
+        public async Task<T> ObtenerPorIdAsincronico(Guid id)
+        {
+            return await _context.Set<T>().FindAsync(id);
+        }
     }
 }
